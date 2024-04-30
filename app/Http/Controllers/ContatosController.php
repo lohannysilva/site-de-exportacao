@@ -14,9 +14,9 @@ class ContatosController extends Controller
      * 
      * @return View
     */
-    public function contato()
+    public function contatoPage()
     {
-        return view('contato');
+        return view('app.contatos');
     }
 
     /**

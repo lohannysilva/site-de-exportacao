@@ -8,6 +8,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/contato', [ContatosController::class, 'contatoPage'])->name('contatos');
 
+Route::post('/contato', [ContatosController::class, 'enviarFormulario'])->name('contatos.submit');
+
 Route::get('/sobre-nos', [SobrenosController::class, 'sobrenosPage'])->name('sobre-nos');
 
 Route::get('/', [HomeController::class, 'homePage'])->name('home');

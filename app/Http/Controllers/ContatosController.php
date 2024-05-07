@@ -24,14 +24,17 @@ class ContatosController extends Controller
     */
     public function enviarFormulario(Request $request)
     {
+        dd($request->all());
        try {
-            Contato::create([
+
+        Contato::create([
+            // <- nome da coluna no banco / nome do campo no formulario ->
             'nome' => $request->nome,
             'email' => $request->email,
             'telefone' => $request->telefone,
             'assunto' => $request->assunto,
             'mensagem' => $request->mensagem
-            ]);
+        ]);
 
             return back()->withSuccess('Formulário enviado');
         } catch (Exception $exception) {

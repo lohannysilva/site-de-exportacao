@@ -7,17 +7,34 @@
 {{-- estes são as sessões do título, css, body e js --}}
 
 @section('css')
+<style>
+
+footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+</style>
 
 @endsection
 
 @section('body')
-    <div class="row" margin-top="100px">
-        <div class="col"></div>
-        <div class="col" >What is Lorem Ipsum?
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
-        
-      
-    </div>
+            <footer>
+                <p>Copyright © 2024 - Todos os direitos reservados</p>
+                <p>Entre em contato pelo E-mail:croche@gmail.com</p>
+                <div>
+                    <p>Siga-nos nas redes sociais:</p>
+                    <ul>
+                   
+                    </ul>
+                </div>
+            </footer>
+
 @endsection
 
 @section('js')

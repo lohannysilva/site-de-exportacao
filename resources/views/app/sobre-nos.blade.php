@@ -9,14 +9,96 @@
 @section('css')
 <style>
 
-footer {
-    background-color: #f2f2f2;
-    padding: 20px;
-    text-align: center;
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	box-sizing: border-box;
 }
 
-footer p {
-    margin-bottom: 10px;
+.conteudo{
+	width: 100%;
+	height: 50vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.conteudo h1{
+	font-size: 15vw;
+	text-transform: uppercase;
+}
+
+footer{
+	width: 100%;
+	min-height: 250px;
+	background: rgb(140, 2, 145);
+	display: flex;
+}
+
+footer .boxs{
+ width: 320px;
+ min-width: 150px;
+ padding: 20px;
+}
+
+footer .boxs:nth-child(4){
+	width: 400px;
+
+}
+
+.boxs h2{
+	color: #fff;
+	margin-bottom: 20px;
+}
+
+.boxs ul li {
+	margin:10px 0px;
+	list-style: none;
+}
+
+.boxs ul li a {
+	color: #000000;
+	text-decoration: none;
+}
+
+.boxs ul li a:hover{
+	color: #fff;
+}
+
+.boxs p {
+	color: #000000;
+	text-align: justify;
+}
+
+.footer{
+	width: 100%;
+	height: 70px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #7a0b6b;
+	padding: 0px 20px ;
+}
+
+.footer h2 {
+	color: #fff;
+}
+
+
+
+@media(max-width:950px){
+	footer{
+		flex-direction: column;
+	}
+	footer .boxs{
+		width: 320px;
+		text-align: center;
+	   }
+	   footer .boxs:nth-child(4){
+		width: 100%;
+	
+	}
 }
 
 </style>
@@ -24,16 +106,53 @@ footer p {
 @endsection
 
 @section('body')
-            <footer>
-                <p>Copyright © 2024 - Todos os direitos reservados</p>
-                <p>Entre em contato pelo E-mail:croche@gmail.com</p>
-                <div>
-                    <p>Siga-nos nas redes sociais:</p>
-                    <ul>
-                   
-                    </ul>
-                </div>
-            </footer>
+            
+  <div class="conteudo">
+
+  </div>
+
+
+  <!-- Rodape-->
+
+<footer>
+  <div class="boxs">
+    <h2>Inicio</h2>
+    <ul>
+   <li><a href="#">Home</a></li>
+   <li><a href="#">Produtos</a></li>
+    </ul>
+  </div>
+
+
+  <div class="boxs">
+    <h2>Informaçoes</h2>
+    <ul>
+      <li><a href="#">Contatos</a></li>
+      <li><a href="#">Email</a></li>
+    </ul>
+  </div>
+
+
+  <div class="boxs">
+    <h2>Suporte</h2>
+    <ul>
+      <li><a href="#">FAQ</a></li>
+      <li><a href="#">Telefone</a></li>
+    </ul>
+  </div>
+
+
+
+  <div class="boxs">
+    <h2>Sobre nos</h2>
+    <p>
+     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+     Nulla fugit labore hic, culpa dolor, facilis fuga autem repellendus odit doloribus distinctio placeat quia cupiditate consequuntur, facere ipsam tempora saepe?
+     Commodi autem ipsa nisi voluptatem et.
+    </p>
+  </div>
+</footer>
+</div>
 
 @endsection
 

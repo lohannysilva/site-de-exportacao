@@ -17,7 +17,7 @@
 }
 
 .conteudo{
-	width: 100%;
+	width: 80p%;
 	height: 50vh;
 	display: flex;
 	justify-content: center;
@@ -39,7 +39,7 @@ footer{
 footer .boxs{
  width: 320px;
  min-width: 150px;
- padding: 20px;
+ padding: 14px;
 }
 
 footer .boxs:nth-child(4){

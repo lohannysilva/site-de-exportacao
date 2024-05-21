@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CategoriaController;
 use App\Http\Controllers\ContatosController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PainelController;
@@ -15,3 +16,5 @@ Route::get('/sobre-nos', [SobrenosController::class, 'sobrenosPage'])->name('sob
 Route::get('/', [HomeController::class, 'homePage'])->name('home');
 
 Route::get('/painel', [PainelController::class, 'painelPage'])->name('painel');
+
+Route::resource('categorias', CategoriaController::class);

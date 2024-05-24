@@ -30,9 +30,13 @@
 
 footer{
 	width: 100%;
-	min-height: 250px;
-	background: rgb(140, 2, 145);
+	min-height: 310px;
+	background: rgb(79, 73, 79);
 	display: flex;
+    position: fixed;
+	bottom: 0;
+	
+	
 }
 
 footer .boxs{
@@ -143,9 +147,7 @@ footer .boxs:nth-child(4){
 <div class="boxs">
   <h2>Sobre nos</h2>
   <p>
-   Lorem ipsum dolor sit amet consectetur adipisicing elit.
-   Nulla fugit labore hic, culpa dolor, facilis fuga autem repellendus odit doloribus distinctio placeat quia cupiditate consequuntur, facere ipsam tempora saepe?
-   Commodi autem ipsa nisi voluptatem et.
+  Objetivo desse site e criar um produto de croche para vendas na feira de ciencias 
   </p>
 </div>
 </footer>

@@ -31,9 +31,12 @@
 
 footer{
 	width: 100%;
-	min-height: 250px;
+	min-height: 40px;
 	background: rgb(140, 2, 145);
 	display: flex;
+	position: fixed;
+	bottom: 0;
+
 }
 
 footer .boxs{

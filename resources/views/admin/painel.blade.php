@@ -11,10 +11,7 @@
 @endsection
 
 @section('body')
-    <div>
-        <p class="bg-primary
-        ">Estou na página de painel</p>
-    </div>
+  
 @endsection
 
 @section('js')

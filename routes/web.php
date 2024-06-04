@@ -5,6 +5,7 @@ use App\Http\Controllers\ContatosController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PainelController;
 use App\Http\Controllers\SobrenosController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/contato', [ContatosController::class, 'contatoPage'])->name('contatos');
@@ -18,3 +19,6 @@ Route::get('/', [HomeController::class, 'homePage'])->name('home');
 Route::get('/painel', [PainelController::class, 'painelPage'])->name('painel');
 
 Route::resource('categorias', CategoriaController::class);
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'homePage'])->name('home');

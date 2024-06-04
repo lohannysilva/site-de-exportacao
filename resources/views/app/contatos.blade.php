@@ -7,10 +7,93 @@
 {{-- estes são as sessões do título, css, body e js --}}
 
 @section('css')
+<style>
+    /* Estilização para o layout da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
 
+/* Centralização do formulário */
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Margens para a coluna */
+.col {
+    flex: 1;
+}
+
+/* Estilização do formulário */
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Estilização dos elementos do formulário */
+.form-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea.form-control {
+    resize: vertical;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #ffffff;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn.bg-black {
+    background-color: #000000;
+}
+
+/* Espaçamento superior e inferior para o formulário */
+.mt-4 {
+    margin-top: 1.5rem !important;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem !important;
+}
+
+</style>
 @endsection
 
 @section('body')
+
 <div class="row">
     <div class="col"></div>
     <div class="col">
@@ -42,6 +125,11 @@
     </div>
     <div class="col"></div>
 </div>
+<div class="conteudo">
+</div>
+
+
+
 @endsection
 
 @section('js')

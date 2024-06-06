@@ -4,11 +4,11 @@
     <title>Contatos</title>
 @endsection
 
-{{-- estes são as sessões do título, css, body e js --}}
+
 
 @section('css')
 <style>
-    /* Estilização para o layout da página */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f8f9fa;
@@ -16,7 +16,6 @@ body {
     padding: 0;
 }
 
-/* Centralização do formulário */
 .row {
     display: flex;
     justify-content: center;
@@ -24,12 +23,12 @@ body {
     height: 100vh;
 }
 
-/* Margens para a coluna */
+
 .col {
     flex: 1;
 }
 
-/* Estilização do formulário */
+
 form {
     background-color: #ffffff;
     padding: 20px;
@@ -80,7 +79,7 @@ textarea.form-control {
     background-color: #000000;
 }
 
-/* Espaçamento superior e inferior para o formulário */
+
 .mt-4 {
     margin-top: 1.5rem !important;
 }

@@ -8,129 +8,71 @@
 
 @section('css')
 <style>
-  *{
-        margin: 0;
-        padding: 0;
-     }
 
-body{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        font-family: "Arial";
-       
-      
-     }
- .card{
-         background-color: #fff;
-         width: 100px;
-         height: 260px;
-         border-radius: 12px;
-         box-shadow: 4px 4px  12px #0025f5;
-         margin-top: 40%;
-     
-         
-        }  
- 
-   footer {
+.conteudo{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  padding-top: 200px;
+}
+
+.card {
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  padding: 20px;
   text-align: center;
-  padding: 10px;
-  background-color: rgb(0, 0, 0);
-  color: white;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-footer p {
-  margin: 0;
+.card img {
+  max-width: 100%;
+  border-radius: 5px;
 }
 
-footer a {
-  color: white;
+.card h3 {
+  margin-top: 15px;
 }
 
+.card p {
+  color: #666;
+}
 </style>
 
 @endsection
 
 @section('body')
+
+<div class="conteudo">
+  <div class="card">
+      <img src="https://via.placeholder.com/150" alt="Imagem 1">
+      <h3>Card 1</h3>
+      <p>Conteúdo do Card 1.</p>
+  </div>
+  <div class="card">
+      <img src="https://via.placeholder.com/150" alt="Imagem 2">
+      <h3>Card 2</h3>
+      <p>Conteúdo do Card 2.</p>
+  </div>
+  <div class="card">
+      <img src="https://via.placeholder.com/150" alt="Imagem 3">
+      <h3>Card 3</h3>
+      <p>Conteúdo do Card 3.</p>
+  </div>
+  <div class="card">
+      <img src="https://via.placeholder.com/150" alt="Imagem 4">
+      <h3>Card 4</h3>
+      <p>Conteúdo do Card 4.</p>
+  </div>
+  <div class="card">
+      <img src="https://via.placeholder.com/150" alt="Imagem 5">
+      <h3>Card 5</h3>
+      <p>Conteúdo do Card 5.</p>
+  </div>
+</div>
  
-<div class="container">
-    <div class="col">
-        <div class="card" style="width: 18rem;">
- 
-            <div class="card-body">
-              <h5 class="card-title">bicho de croche </h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Ver mais</a>
-            </div>
-          </div>
-    </div>    
-</div>
 
-
-
-<div class="container">
-    <div class="col">
-        <div class="card" style="width: 18rem;">
-         
-            <div class="card-body">
-              <h5 class="card-title">bicho de croche adulto</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Ver mais</a>
-            </div>
-          </div>
-    </div>    
-</div>
-
-
-
-
-<div class="container">
-    <div class="col">
-        <div class="card" style="width: 18rem;">
-     
-            <div class="card-body">
-              <h5 class="card-title">bicho de croche criança</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Ver mais</a>
-            </div>
-          </div>
-    </div>    
-</div>
-
-
-
-
-<div class="container">
-    <div class="col">
-       
-        
-        <div class="card" style="width: 18rem;">
-            <img src="bicho.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">CROCHE QUALQUER</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Ver mais</a>
-            </div>
-          </div>
-    </div>    
-</div>
-
-
-
-
-
-
-
-
-<footer>
-    <p>Sei lá <br>
-    <a href="croche@gmail.com">croche@example.com</a></p>
-   
-  </footer>
 
 
 @endsection

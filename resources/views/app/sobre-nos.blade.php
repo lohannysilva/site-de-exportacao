@@ -8,71 +8,69 @@
 
 @section('css')
 <style>
-
-.conteudo{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
-  padding-top: 200px;
+#img1{
+    text-align: center;
+    margin: auto;
+    margin-bottom: 100px;
+    width: 600px;
+    height: 300px;
+    margin-left: 100px;
+    
 }
 
-.card {
-  background-color: #f4f4f4;
-  border-radius: 5px;
-  padding: 20px;
+p{
+     text-align: justify;
+     margin-top: 30px;
+     padding: absolute;
+     margin-left: 12%;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+
+
+ .tit1{
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: auto;
+  margin-top: 70px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 170%;
+  margin-bottom: 100px;
 }
 
-.card img {
-  max-width: 100%;
-  border-radius: 5px;
-}
-
-.card h3 {
-  margin-top: 15px;
-}
-
-.card p {
-  color: #666;
-}
+#line{
+    margin:auto;
+    text-align: center;
+  }
 </style>
 
 @endsection
 
 @section('body')
 
-<div class="conteudo">
-  <div class="card">
-      <img src="https://via.placeholder.com/150" alt="Imagem 1">
-      <h3>Card 1</h3>
-      <p>Conteúdo do Card 1.</p>
-  </div>
-  <div class="card">
-      <img src="https://via.placeholder.com/150" alt="Imagem 2">
-      <h3>Card 2</h3>
-      <p>Conteúdo do Card 2.</p>
-  </div>
-  <div class="card">
-      <img src="https://via.placeholder.com/150" alt="Imagem 3">
-      <h3>Card 3</h3>
-      <p>Conteúdo do Card 3.</p>
-  </div>
-  <div class="card">
-      <img src="https://via.placeholder.com/150" alt="Imagem 4">
-      <h3>Card 4</h3>
-      <p>Conteúdo do Card 4.</p>
-  </div>
-  <div class="card">
-      <img src="https://via.placeholder.com/150" alt="Imagem 5">
-      <h3>Card 5</h3>
-      <p>Conteúdo do Card 5.</p>
-  </div>
-</div>
- 
 
+<Div id="line"class="row">
+            
+    <div  class="col">
+    <p class="tit1"><b>SOBRE NÓS</b></p>
+    </div>
+</div>  
+<div class="row">
+    <div class="col">
+
+<p>O objetivo desse desse trabalho é criar um site</p>
+
+<p>
+  <br>Este site foi criado pelas trumas de administrção é informatica de internet
+</p>
+</div>
+
+
+<div  class="col">
+
+
+    <img id="img1"src="{{asset('img/leao.jpg')}}" alt="Imagem 5">
+   
+ </div>
+</div>
 
 
 @endsection

@@ -56,10 +56,11 @@ p{
 <div class="row">
     <div class="col">
 
-<p>O objetivo desse desse trabalho é criar um site</p>
+<p>Bem-vindo ao Amiguchê, onde transformamos fios em arte!</p>
 
 <p>
-  <br>Este site foi criado pelas trumas de administrção é informatica de internet
+    Somos apaixonados pelo mundo do crochê e pela beleza que podemos criar com um simples gancho e um novelo de fios. Aqui, cada ponto é uma história, e cada peça é uma expressão única de criatividade e habilidade.
+    Nossa jornada no crochê começou com o desejo de compartilhar nossa paixão com o mundo. Ao longo dos anos, aprimoramos nossas técnicas, exploramos padrões e nos maravilhamos com as infinitas possibilidades que essa arte oferece
 </p>
 </div>
 

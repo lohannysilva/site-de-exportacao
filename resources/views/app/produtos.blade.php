@@ -89,8 +89,6 @@
     <p>R$ 25,00</p>
     <a href="{{ route('produtos.show', ['produto' => 8]) }}" class="btn btn-dark">Ver detalhes</a>
   </div>
-  
-
   <div class="card">
     <img id="img1"src="{{asset('img/batman.jpg')}}" alt="Imagem 5">
     <h3>Batman</h3>

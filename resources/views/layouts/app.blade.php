@@ -8,16 +8,27 @@
 
     @yield('css')
     <style>
-      body{
-      
-      }
+       body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
       nav{
         height: 100px;
         padding-left: 100px;
-        background-color: #f8afff;
+        background-color: #f8afff; 
       }
 
-
+      footer {
+            background-color: #9c2da7;
+            color: #fff;
+            padding: 40px 20px;
+            width: 100%;
+            text-align: center;
+            bottom: 0;
+            margin-top:100px 
+        }
 
 
     </style>
@@ -38,9 +49,7 @@
         <li class="nav-item">
           <a class="nav-link" href="{{ route('sobre-nos') }}">Sobre nós</a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" href="{{ route('painel') }}">Painel</a>
-          </li>
+       
 
           <li class="nav-item">
             <a class="nav-link" href="{{ route('produtos') }}">Produtos</a>
@@ -48,15 +57,35 @@
 
 
         </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-dark" type="submit">Search</button>
-        </form>
+      
       </div>
     </div>
   </nav>
+
+ 
     @yield('body')
 
+    <footer>
+      <div class="container">
+          <div class="section">
+              <h3>Sobre Nós</h3>
+              <p>No Amiguchê não se trata apenas de criar belas peças, mas também de compartilhar conhecimento, inspirar outros e criar uma comunidade de entusiastas do crochê. Estamos aqui para ajudá-lo em sua própria jornada de crochê, seja você um iniciante curioso ou um entusiasta experiente.</p>
+          </div>
+          <div class="section">
+              <h3>Contato</h3>
+              <p>Endereço: Rua Guarani 233 </p>
+              <p>Telefone: (11) 94002-8922</p>
+              <p>Email: Amiguche@gmail.com</p>
+          </div>
+          <div class="section">
+             
+          </div>
+      </div>
+      <div style="text-align: center;">
+          <p>&copy; 2024 AJK. Todos os direitos reservados.</p>
+      </div>
+  </footer>
+  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     @yield('js')

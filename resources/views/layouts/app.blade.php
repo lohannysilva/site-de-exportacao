@@ -17,11 +17,11 @@
       nav{
         height: 100px;
         padding-left: 100px;
-        background-color: #f8afff; 
+        background-color: #C2B7A9; 
       }
 
       footer {
-            background-color: #9c2da7;
+            background-color: #C2B7A9;
             color: #fff;
             padding: 40px 20px;
             width: 100%;

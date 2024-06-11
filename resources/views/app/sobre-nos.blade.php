@@ -10,9 +10,9 @@
 <style>
 #img1{
     text-align: center;
-    margin: auto;
+
     margin-bottom: 100px;
-    width: 600px;
+    width: 400px;
     height: 300px;
     margin-left: 100px;
     
@@ -68,7 +68,7 @@ p{
 <div  class="col">
 
 
-    <img id="img1"src="{{asset('img/leao.jpg')}}" alt="Imagem 5">
+    <img id="img1"src="{{asset('img/groche.jpg')}}" alt="Imagem 5">
    
  </div>
 </div>

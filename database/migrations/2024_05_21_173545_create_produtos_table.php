@@ -18,7 +18,6 @@ return new class extends Migration
             $table->string('cor', 30)->nullable();
             $table->string('tamanho', 15)->nullable();
             $table->text('descricao')->nullable();
-            $table->unsignedBigInteger('categoria_id');
             $table->timestamps();
         });
     }
